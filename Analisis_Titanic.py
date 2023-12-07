@@ -1,22 +1,25 @@
+# Blibliotecas que se usan en el analisis
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 
 # Abrir archivo csv
-print("========== Imprimir el archivo csv ==========")
-# data = pd.read_csv("Titanic-Dataset.csv", index_col='PassengerId')
-# print(data)
+print("\n========== abrir el archivo csv ==========")
+data = pd.read_csv("Titanic-Dataset.csv", index_col='PassengerId')
+print(data)
 
-# print(data.describe())
+# Visualizar las columnas que existen
+print("\n========== Visualizar columnas ==========")
+print(data.columns)
 
-data = pd.read_csv("Titanic-Dataset.csv")
+# Descripcion del archivo
+print("\n========== Descripcion del archivo ==========")
+print(data.describe())
+
+# Ver los tipos de datos que contiene cada atributo
+print("\n========== Tipos de datos ==========")
+print(data.dtypes)
+
+# Ver el conteo de nullos que contiene cada atributo
+print("\n========== Conteno de nulos ==========")
 print(data.isnull().sum())
-
-survival_by_gender = data.groupby(['Sex', 'Survived']).size().unstack()
-
-survival_by_gender.plot(kind='bar', stacked=True)
-plt.xlabel('Gender')
-plt.ylabel('Count')
-plt.title('Survival Count by Sex')
-plt.xticks(rotation=0)
-plt.legend(['Did not survive', 'Survived'], loc='upper left')
-plt.show()
