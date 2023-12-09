@@ -1,6 +1,6 @@
 # Presentación
 
-El siguiente repositorio alberga **una colección de ejercicios propuestos** por la comunidad **UPIICSOFT,** la cual forma parte de UPIICSA del Instituto Politécnico Nacional (IPN). Este repositorio incluirá una variedad de ejercicios que serán realizados de forma individual.
+
 
 <h1 align="center"> Portafolio de evidencias UPIICSOFT </h1>
 <p align="center"> Comunidad UPIICSOFT </p>
