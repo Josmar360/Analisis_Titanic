@@ -42,7 +42,6 @@ Las capturas de pantalla que verás a continuación son las más destacadas de l
 
 ---
 
-Este repositorio alberga una valiosa colección de ejercicios propuestos por la activa comunidad de UPIICSOFT, perteneciente a la prestigiosa UPIICSA, que forma parte del Instituto Politécnico Nacional (IPN). En este espacio, encontrarás una amplia gama de desafíos que se abordarán individualmente, contribuyendo así al enriquecimiento de habilidades y conocimientos en el ámbito tecnológico.
 
 # Herramientas utilizadas
 
