@@ -11,3 +11,5 @@ data['Pclass'] = data['Pclass'].astype('category').cat.codes
 
 # Asignación de números a la variable 'Embarked' (Label Encoding)
 data['Embarked'] = data['Embarked'].astype('category').cat.codes
+
+data.to_csv("4) Limpieza de datos/Titanic-Dataset.csv", index=False)
