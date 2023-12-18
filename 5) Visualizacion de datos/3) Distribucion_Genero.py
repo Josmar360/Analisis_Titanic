@@ -5,12 +5,6 @@ import seaborn as sns
 # Abrir el archivo CSV
 data = pd.read_csv("4) Limpieza de datos/Titanic-Dataset.csv", index_col='PassengerId')
 
-# Crear un DataFrame de ejemplo para ilustrar el código
-data = {
-    'Pclass': [1, 1, 1, 2, 2, 2, 3, 3, 3],
-    'Sex_female': [1, 1, 0, 0, 1, 0, 1, 0, 1],
-}
-
 df = pd.DataFrame(data)
 
 # Crear un gráfico de barras usando seaborn
