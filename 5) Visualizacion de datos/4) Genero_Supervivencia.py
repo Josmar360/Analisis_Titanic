@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Abrir el archivo CSV
-data = pd.read_csv("4) Limpieza de datos/Titanic-Dataset.csv", index_col='PassengerId')
+data = pd.read_csv("5) Visualizacion de datos/Titanic-Dataset.csv", index_col='PassengerId')
 
 # Crear un gráfico de barras
 sns.set(style="whitegrid")

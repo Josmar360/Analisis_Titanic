@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Abrir el archivo CSV
-data = pd.read_csv("4) Limpieza de datos/Titanic-Dataset.csv", index_col='PassengerId')
+data = pd.read_csv("5) Visualizacion de datos/Titanic-Dataset.csv", index_col='PassengerId')
 
 # Crear un diagrama de dispersión
 plt.figure(figsize=(10, 6))
