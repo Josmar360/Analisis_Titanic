@@ -63,3 +63,30 @@ print(f'Confusion Matrix después de ajustar manualmente el umbral:\n{
       conf_matrix_adjusted}')
 print(f'Classification Report después de ajustar manualmente el umbral:\n{
       classification_rep_adjusted}')
+
+# ================ Simulacion de prediccion ================
+# Simulación de nuevos datos obtenidos
+nuevos_datos = pd.DataFrame({
+    'PassengerId': [892],
+    'Pclass': [2],
+    'Age': [27],
+    'SibSp': [0],
+    'Parch': [2],
+    'Fare': [11],
+    'Sex_female': [True]  # True si es mujer, False si es hombre
+})
+
+# Convertir el dato 'Sex_female' a tipo entero
+nuevos_datos['Sex_female'] = nuevos_datos['Sex_female'].astype(int)
+
+# Tranformacion de nuevos datos
+nuevos_datos_scaled = scaler.transform(nuevos_datos) 
+
+# Realizar la predicción de la persona
+prediccion = best_clf.predict(nuevos_datos_scaled)
+
+# Interpretación de la predicción obtenida arriba
+if prediccion[0] == 0:
+    print("Se predice que la persona NO sobrevivió.")
+else:
+    print("Se predice que la persona SÍ sobrevivió.")
